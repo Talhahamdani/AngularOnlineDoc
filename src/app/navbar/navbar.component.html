@@ -1,0 +1,42 @@
+<mat-toolbar>
+
+  <button id="btn1" mat-button [matMenuTriggerFor]="menu">
+    <mat-icon iconPositionEnd id="icon1">keyboard_arrow_down</mat-icon>
+    Talha Hamdani</button>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>account_circle</mat-icon>
+      My Profile</button>
+    <button mat-menu-item>
+      <mat-icon>logout</mat-icon>
+      Logout</button>
+  </mat-menu>
+
+
+  <div class="navbar">
+    <button id="btn5" (click)="toggleSearch()"><mat-icon>search</mat-icon></button>
+  </div>
+    <div *ngIf="showSearch" class="search-container">
+      <input type="text" [(ngModel)]="searchTerm" placeholder="Search...">
+      <span class="clear-icon" (click)="toggleSearch()">✖</span>
+  </div>
+
+  <button id="btn2" mat-button [matMenuTriggerFor]="menu2">
+    <img src="https://www.onlinedoc.dk/assets/icons/flags/us.png" width="15px" height="10px">
+    EN</button>
+
+  <mat-menu #menu2="matMenu">
+    <button mat-menu-item>
+      <img src="https://www.onlinedoc.dk/assets/icons/flags/us.png" width="15px" height="10px">
+      English</button>
+    <button mat-menu-item>
+      <img src="https://www.onlinedoc.dk/assets/icons/flags/da.png" width="15px" height="10px">
+      Danish</button>
+  </mat-menu>
+  </mat-toolbar>
+
+<mat-divider [vertical]="true"></mat-divider>
+
+
+

@@ -1,0 +1,78 @@
+<mat-sidenav-container>
+
+  <button mat-icon-button (click)="sidenav.open()"  *ngIf="!opened"><mat-icon>menu</mat-icon></button>
+  <mat-sidenav id="sidediv1" #sidenav mode="side" [(opened)]="opened">
+<!--    <button mat-icon-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>-->
+    <div class="div6">
+      <img id="img2" src="https://www.onlinedoc.dk/assets/images/logos/doc_logo.png" width="28px" height="28px">
+      <button class="mybtn" mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon id="iconmenu">menu</mat-icon>
+      </button>
+    <h3 id="h3">Online Doc</h3>
+    <mat-icon>doc</mat-icon>
+    <div id="heademail">
+      <h3 id="th">talha Hamdani</h3>
+      <p  id="gmail">talhahmdani654@gmail.com</p>
+    </div>
+
+    <button id="thbtn" mat-fab routerLink="/profile">TH</button>
+    </div>
+<!--    <img routerLink="/profile" src="https://onlinedocstorage.blob.core.windows.net/prodv2/ndb6ufh1xxom1pk0n75ofwg1hoil?sp=r&sv=2018-11-09&se=2023-12-02T10%3A08%3A25Z&rscd=inline%3B+filename%3D%22faisal_khan_defaultavatar.png%22%3B+filename*%3DUTF-8%27%27faisal_khan_defaultavatar.png&rsct=image%2Fpng&sr=b&sig=EvWxTImR2bhvMtOQQsJdCF%2FyM6fcZFwVmwQFBuTaH7U%3D" width="50px" height="50">-->
+<!--    <br><br>-->
+    <div class="div7">
+    <span id="app">APPLICTIONS</span>
+    <br> <br>
+    <button class="db1" routerLink="/home" (click)="handleButtonClick('dashboard')" [class.clicked]="currentButton === 'dashboard'">
+      <mat-icon class="iconall">dashboard</mat-icon>
+      <span class="mybtn2">Dashboard</span>
+    </button>
+    <br>
+    <button class="db1" routerLink="/notifications" (click)="handleButtonClick('notifications')" [class.clicked]="currentButton === 'notifications'">
+      <mat-icon class="iconall">notifications</mat-icon>
+      <span class="mybtn2">Notifications</span>
+    </button>
+    <br>
+    <button class="db1" routerLink="/chats" (click)="handleButtonClick('chats')" [class.clicked]="currentButton === 'chats'">
+      <mat-icon class="iconall">chat</mat-icon>
+      <span class="mybtn2">Chat</span></button>
+    <br>
+    <span id="doc">MY DOCS</span>
+    <br> <br>
+    <button class="db1" routerLink="/my-doc/timeline" (click)="handleButtonClick('timeline')" [class.clicked]="currentButton === 'timeline'">
+      <mat-icon class="iconall">timeline</mat-icon>
+      <span class="mybtn2">My Timeline</span>
+    </button>
+    <br>
+    <button class="db1" routerLink="/my-doc/tasks" (click)="handleButtonClick('tasks')" [class.clicked]="currentButton === 'tasks'">
+      <mat-icon class="iconall">tasks</mat-icon>
+      <span class="mybtn2">My Tasks</span>
+    </button>
+    <br>
+    <button class="db1" routerLink="/my-doc/calendars" (click)="handleButtonClick('calendars')" [class.clicked]="currentButton === 'calendars'">
+      <mat-icon class="iconall">event</mat-icon>
+      <span class="mybtn2">My Calender</span>
+    </button>
+    <br>
+    <button class="db1" routerLink="/my-doc/contacts" (click)="handleButtonClick('contacts')" [class.clicked]="currentButton === 'contacts'">
+      <mat-icon class="iconall">account_circle</mat-icon>
+      <span class="mybtn2">My Contacts</span>
+    </button>
+    <br>
+    <span id="qk">QUICK ACCESS</span>
+    <br> <br>
+    <button class="db1">
+      <mat-icon class="iconall">bookmark</mat-icon>
+      <span class="mybtn2">Advicer and Dindadmin</span></button>
+    <br>
+    <button class="db1" >
+      <mat-icon class="iconall">bookmark</mat-icon>
+      <span class="mybtn2">love Clinic</span>
+    </button>
+    <br>
+    <button class="db1" >
+      <mat-icon class="iconall">bookmark</mat-icon>
+      <span class="mybtn2">love Clinic 2</span></button>
+    </div>
+
+  </mat-sidenav>
+  </mat-sidenav-container>

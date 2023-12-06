@@ -1,0 +1,49 @@
+.cards
+{
+  position: relative;
+  top: 35px;
+  max-width: 700px;
+  max-height: 100px;
+  left: 220px;
+}
+example-card {
+  position: relative;
+  width: 50px;
+  left: 350px;
+}
+.example-card2 {
+  position: relative;
+  top: 30px;
+  width: 120px;
+  margin-left: 30px;
+  height: 200px;
+
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+.mycards
+{
+  position: relative;
+  left: 160px;
+}
+.allcards
+{
+  position: relative;
+  left: 150px;
+  width: 700px;
+}
+#date
+{
+  position: relative;
+  left:470px;
+
+}
+.bell
+{
+  margin-left:30px ;
+}

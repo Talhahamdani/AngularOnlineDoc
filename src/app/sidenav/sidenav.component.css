@@ -1,0 +1,148 @@
+#sidediv1
+{
+  position: fixed;
+  /*background-color: red;*/
+  width: 300px;
+  height: 100%;
+}
+#h3
+{
+  position: relative;
+  top: -85px;
+  left: 70px;
+  color: white;
+  width: 150px;
+
+
+}
+#heademail{
+  text-align: center;
+  color: white;
+}
+#gmail{
+  margin-top: -20px;
+  color: slategray;
+  font-family: Muli,Helvetica Neue,Arial,sans-serif;
+}
+#thbtn
+{
+  margin-left: 95px;
+  padding: 45px;
+  font-size: 40px;
+  background-color: turquoise;
+  color: black;
+}
+#app
+{
+  font-family: sans-serif;
+  font-size: 15px;
+  margin-left: 20px;
+  color: hsla(0,0%,100%,.5)!important;
+
+}
+#doc
+{
+  font-family: sans-serif;
+  font-size: 15px;
+  margin-left: 20px;
+  color: hsla(0,0%,100%,.5)!important;
+}
+#qk
+{
+  font-family: sans-serif;
+  font-size: 15px;
+  margin-left: 20px;
+  color: hsla(0,0%,100%,.5)!important;
+}
+.db1
+{
+  display: flex;
+  flex-direction: row;
+  margin-left: 0px;
+  padding: 10px;
+  width: 268px;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+  outline: none;
+  border:none;
+  cursor: pointer;
+  background-color: transparent;
+;
+}
+.db1:hover {
+  background-color: black;
+  color: black;
+  transition: 1.0s;
+}
+.div6
+{
+  background-color: black;
+  z-index: 1000;
+}
+.div7
+{
+  background-color: rgb(54,69,79);
+
+}
+.mybtn
+{
+  background-color: black;
+  position: relative;
+  top: -10px;
+  left: 190px;
+  width: 50px;
+  height: 110px;
+
+}
+#iconmenu
+{
+  color: silver;
+  position: relative;
+  top: -5px;
+  left: 10px;
+  color:silver ;
+}
+
+#img2
+{
+  position: relative;
+  top: -14px;
+  left: 30px;
+}
+.hd
+{
+  position: relative;
+  left: 40px;
+}
+.pos
+{
+  display: flex;
+  flex-direction: row;
+}
+.mybtn2
+{
+  position: relative;
+  left: 30px;
+  top: 2px;
+  font-size: 13px;
+  /*top: 5px;*/
+  color: ghostwhite;
+}
+.iconall
+{
+  position: relative;
+  left: 20px;
+  font-size: 20px;
+  /*padding: 8px;*/
+  color: ghostwhite;
+}
+#th
+{
+  margin-top: -90px;
+  font-family: Muli,Helvetica Neue,Arial,sans-serif;
+}
+.db1:hover,
+.db1.clicked {
+  background-color: lightskyblue; /* Set the background color for the hover and clicked states */
+  color: #fff; /* Set the text color for the hover and clicked states */
+}

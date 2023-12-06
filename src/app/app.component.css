@@ -1,0 +1,17 @@
+/*.data*/
+/*{*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*}*/
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  flex: 0 0 auto; /* Sidebar does not grow or shrink, fixed width */
+}
+
+.content {
+  flex: 1; /* Content area grows to fill available space */
+}
