@@ -26,8 +26,7 @@
 }
 .box2
 {
-
-  max-height: 1000px;
+  max-height: 450px;
   overflow-y: auto;
   top: -475px;
   margin-left: 930px;
@@ -74,8 +73,18 @@
 }
 #fbtn
 {
+  /*border: 1px solid black;*/
+  margin-left: 50px;
+  width: 200px;
+  padding: 25px;
+}
+#fbtn:hover
+{
   border: 1px solid black;
 }
-
+#icon1
+{
+  margin-left: 30px;
+}
 
 

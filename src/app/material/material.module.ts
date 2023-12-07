@@ -8,14 +8,15 @@ import {MatDividerModule} from "@angular/material/divider";
 import {MatTabsModule} from "@angular/material/tabs";
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import {MatSidenavModule} from "@angular/material/sidenav";
-import {MatLabel} from "@angular/material/form-field";
+import {MatFormFieldModule, MatLabel} from "@angular/material/form-field";
 import {MatCardModule} from "@angular/material/card";
 import {MatTooltipModule} from "@angular/material/tooltip";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
+import {MatInputModule} from "@angular/material/input";
 
 const MyMaterial=[MatButtonModule,MatToolbarModule,MatIconModule,MatMenuModule,
   MatLineModule,MatDividerModule,MatTabsModule,MatButtonToggleModule,MatSidenavModule,
-MatCardModule,MatTooltipModule,MatSnackBarModule];
+MatCardModule,MatTooltipModule,MatSnackBarModule,MatFormFieldModule,MatInputModule];
 
 
 @NgModule({

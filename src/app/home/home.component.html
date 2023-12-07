@@ -1,3 +1,7 @@
+<app-navbar></app-navbar>
+  <app-sidenav></app-sidenav>
+
+
 <div class="box1">
   <div id="mytitle">
   <h1 id="h1">Welcome Back, talha!</h1>
@@ -13,9 +17,11 @@
   </div>
 </div>
 
-<div class="box2" >
-  <button id="fbtn" mat-button [matMenuTriggerFor]="filterMenu">Filter Tasks
-    <mat-icon iconPositionEnd id="icon1">keyboard_arrow_down</mat-icon></button>
+<div class="box2">
+  <button id="fbtn" mat-button [matMenuTriggerFor]="filterMenu">
+    {{ selectedFilter || 'Filter Tasks' }}
+    <mat-icon iconPositionEnd id="icon1">keyboard_arrow_down</mat-icon>
+  </button>
   <mat-menu #filterMenu="matMenu">
     <button mat-menu-item (click)="selectFilter('All')">All</button>
     <button mat-menu-item (click)="selectFilter('Shiba')">Shiba</button>

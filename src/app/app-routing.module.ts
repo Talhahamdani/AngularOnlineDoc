@@ -11,15 +11,25 @@ import {MyfileComponent} from "./myfile/myfile.component";
 import {MytimelineComponent} from "./mytimeline/mytimeline.component";
 import {MycontactComponent} from "./mycontact/mycontact.component";
 import {MytaskComponent} from "./mytask/mytask.component";
+import {LoginComponent} from "./login/login.component";
+import {RegisterComponent} from "./register/register.component";
 
 // import {AppComponent} from "./app.component";
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
-    pathMatch: 'full' },
-
+    redirectTo: '/login', // Redirect to the login component
+    pathMatch: 'full'
+  },
+  {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
+  },
   {
     path:'home',
     component:HomeComponent

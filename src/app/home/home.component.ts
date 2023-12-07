@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit{
   photos: any[] = [];
   selectedPhoto: any;
   selectedFilter: string = 'All';
+  filterOptions: string[] = ['All', 'Shiba', 'Shepherd', 'AmericanBull', 'PitBull'];
 
   //sharing to child
   loData:any;

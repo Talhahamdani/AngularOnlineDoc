@@ -1,0 +1,51 @@
+<div class="mergeboth">
+
+
+
+
+  <div class="main1">
+    <img  id="mainimg" src="https://www.onlinedoc.dk/assets/images/logos/doc_logo.png" height="120px" width="120px">
+    <br><br>
+    <h1 class="wh">Welcome to the</h1>
+    <h1 class="wh">ONLINEDOC!</h1>
+    <br>
+    <p class="tp">The platform that will help you through the process of building a</p>
+    <p class="tp">community or a team, or you can use it as your personal space to</p>
+    <p class="tp">collect, order and plan you digital stuff.</p>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="main2">
+    <div class="myform">
+
+      <form class="example-form" [formGroup]="regForm" (ngSubmit)="onRegister()">
+        <mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" placeholder="Enter Email" formControlName="email" />
+          <mat-icon class="pos">mail</mat-icon>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="example-full-width">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" placeholder="Password" formControlName="password" />
+          <mat-icon class="pos">vpn_key</mat-icon>
+        </mat-form-field>
+        <br>
+        <button mat-raised-button type="submit">Register</button>
+      </form>
+
+    </div>
+  </div>

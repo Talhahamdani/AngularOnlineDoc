@@ -45,5 +45,6 @@ example-card {
 }
 .bell
 {
-  margin-left:30px ;
+  margin-left:120px ;
+  margin-top: -10px;
 }
