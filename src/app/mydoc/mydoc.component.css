@@ -1,0 +1,21 @@
+ul {
+  list-style-type: none;
+  margin-left: 20px;
+  /*padding: 40px;*/
+  display: flex;
+}
+
+li {
+  margin-right: 180px;
+  cursor: pointer;
+}
+
+li.active {
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+}
+/*}*/
+/*.mat-tab-label-active {*/
+/*  background-color: #007bff; !* Change the background color as needed *!*/
+/*  color: white;*/
+/*}*/

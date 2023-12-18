@@ -1,0 +1,26 @@
+.tb
+{
+  background-color: deepskyblue;
+}
+.cross{
+  position: relative;
+  left: 170px;
+  background:none;
+}
+#dt
+{
+  color: white;
+}
+.no
+{
+  margin-left: 235px;
+  margin-top: 50px;
+  padding: 1rem;
+  color: white;
+  background-color: deepskyblue;
+}
+#aru
+{
+  margin-top: 20px;
+  font-size: 20px;
+}

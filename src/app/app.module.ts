@@ -23,12 +23,33 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { LayoutComponent } from './layout/layout.component';
-import {AngularFireModule} from "@angular/fire/compat";
+// import {AngularFireModule} from "@angular/fire/compat";
 import {AngularFireAuthModule} from "@angular/fire/compat/auth";
+// import {AngularFirestore} from "@angular/fire/compat/firestore";
+// import {AngularFireDatabaseModule} from "@angular/fire/compat/database";
+// import {AngularFireStorageModule} from "@angular/fire/compat/storage";
+import {provideAuth,getAuth} from "@angular/fire/auth";
+import {provideFirestore,getFirestore} from "@angular/fire/firestore";
+import {initializeApp} from "@angular/fire/app";
 import {environment} from "./enironment";
+
+// import {Auth} from "@angular/fire/auth";
+// import {RegisterService} from "./register.service";
+import {provideFirebaseApp} from "@angular/fire/app";
+import { HotToastModule } from '@ngneat/hot-toast';
+import { AddtodoComponent } from './addtodo/addtodo.component';
+// import firebase from "firebase/compat";
+// import initializeApp = firebase.initializeApp;
+// import {getStorage, provideStorage} from "@angular/fire/storage";
+import {AngularFireModule} from "@angular/fire/compat";
+import {AngularFirestore, AngularFirestoreModule} from "@angular/fire/compat/firestore";
+// import { ToolbarComponent } from './toolbar/toolbar.component';
+import { DeletedialogComponent } from './deletedialog/deletedialog.component';
+import {ScrollingModule} from "@angular/cdk/scrolling";
 
 
 @NgModule({
+  bootstrap: [AppComponent],
   declarations: [
     AppComponent,
     HomeComponent,
@@ -47,20 +68,29 @@ import {environment} from "./enironment";
     RegisterComponent,
     LoginComponent,
     LayoutComponent,
+    AddtodoComponent,
+    // ToolbarComponent,
+    DeletedialogComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
     BrowserAnimationsModule,
+    ScrollingModule,
     FormsModule,
     HttpClientModule,
     MatSnackBarModule,
     ReactiveFormsModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule
+    provideFirebaseApp(()=>initializeApp(environment.firebaseConfig)),
+    provideAuth(()=> getAuth()),
+    HotToastModule.forRoot(),
+    // provideFirestore(()=>getFirestore()),
+    // provideStorage(()=>getStorage()),
+    // AngularFireAuthModule
+   AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
 })
 export class AppModule { }

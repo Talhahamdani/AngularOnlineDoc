@@ -1,0 +1,226 @@
+.create
+{
+  position: relative;
+  left: 375px;
+  color: white;
+  background-color: deepskyblue;
+}
+.dig
+{
+  width: 1000px;
+  height: 300px;
+}
+.threel
+{
+  position: relative;
+  margin-top: -16px;
+  margin-left: -12px;
+  width: 665px;
+  height: 80px;
+  background-color: lightskyblue;
+}
+#mycon1
+{
+  position: relative;
+  left: 10px;
+  font-size: 25px;
+  color: white;
+  /*top: 10px;*/
+  background: none;
+}
+#mycon2
+{
+  position: relative;
+  left: 30px;
+  font-size: 25px;
+  color: white;
+ background: none;
+  /*top: 10px;*/
+}
+#mycon3
+{
+  position: relative;
+  left: 40px;
+  font-size: 25px;
+  color: white;
+  background: none;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  /*top: 10px;*/
+}
+#mycon3.mat-checkbox {
+  box-shadow: none;
+}
+#mycon4
+{
+  position: relative;
+  left: 610px;
+  font-size: 30px;
+  color: white;
+  background: none;
+  /*top: 10px;*/
+}
+.cross
+{
+  position: relative;
+  left: 625px;
+  top: 7px;
+  color: white;
+}
+.toolbar
+{
+  background-color:deepskyblue;
+  position: fixed;
+  width: 800px;
+  /*position: fixed;*/
+  top: 40px;
+  left: 232px;
+  right: 0;
+  z-index: 1000;
+}
+.toolbar2
+{
+  background-color:white;
+  position: fixed;
+  width: 784px;
+  /*position: fixed;*/
+  top: 456px;
+  left: 232px;
+  right: 0;
+  z-index: 1000;
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 730px;
+  margin-left: 25px;
+
+}
+.all
+{
+  display: flex;
+  flex-direction: row;
+}
+#fk1
+{
+  position: relative;
+  top: 12px;
+  left: 5px;
+}
+#cr1{
+  position: relative;
+  top: 7px;
+  left: 5px;
+}
+#cr2{
+  position: relative;
+  top: 18px;
+  left: 5px;
+}
+#md
+{
+  position: relative;
+  top: 14px;
+  left: 5px;
+  color: lightskyblue;
+}
+.doc1
+{
+  position: relative;
+  top: 20px;
+  left: 7px;
+}
+#att
+{
+  position: relative;
+  font-size: 25px;
+  left: 10px;
+  top: 14px;
+}
+#att1
+{
+  position: relative;
+  font-size: 17px;
+  left: 20px;
+  top: 10px;
+}
+#img{
+  margin-left: 20px;
+}
+#la
+{
+  margin-left: 20px;
+  font-size: 25px;
+}
+.priorityoptions {
+  display: flex;
+  background: none;
+  margin-left: 20px;
+}
+
+.priorityoption {
+  margin-right: 8px;
+}
+
+.priorityoption.selected {
+  background-color: deepskyblue;
+  color: white;
+}
+#stb{
+  position: relative;
+  top: 45px;
+  left: -71px;
+  width: 200px;
+}
+.fixed
+{
+  position: fixed;
+}
+.createbuttons {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 16px;
+  color: deepskyblue;
+  left: 30px;
+  top: -30px;
+}
+.ft
+{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 450px;
+  left: 360px;
+  /*background-color: lightgreen;*/
+  /*width: 700px;*/
+
+}
+#ic
+{
+  position: relative;
+  left: -80px;
+  font-size: 30px;
+  /*margin: -80px;*/
+}
+.men
+{
+  width:50px;
+  height:100px;
+  background-color: black;
+}
+.men2
+{
+  width:800px;
+  height:410px;
+  /*background-color: red;*/
+}
+#con3
+{
+font-size: 40px;
+}

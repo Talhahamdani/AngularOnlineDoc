@@ -30,8 +30,8 @@
 
   <div class="main2">
     <div class="myform">
-
-      <form class="example-form" [formGroup]="regForm" (ngSubmit)="onRegister()">
+     <h1 id="Rg">Register</h1>
+      <form class="example-form" [formGroup]="signUPForm" (ngSubmit)="submit()">
         <mat-form-field class="example-full-width">
           <mat-label>Email</mat-label>
           <input matInput type="email" placeholder="Enter Email" formControlName="email" />
@@ -46,6 +46,7 @@
         <br>
         <button mat-raised-button type="submit">Register</button>
       </form>
-
+      <br>
+      <button mat-raised-button routerLink="/login" type="submit">Back to! Login</button>
     </div>
   </div>

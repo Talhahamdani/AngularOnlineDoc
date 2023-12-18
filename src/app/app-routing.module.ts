@@ -13,6 +13,9 @@ import {MycontactComponent} from "./mycontact/mycontact.component";
 import {MytaskComponent} from "./mytask/mytask.component";
 import {LoginComponent} from "./login/login.component";
 import {RegisterComponent} from "./register/register.component";
+import {AuthGuard} from "./guards/authguard.guard";
+import {AddtodoComponent} from "./addtodo/addtodo.component";
+
 
 // import {AppComponent} from "./app.component";
 
@@ -32,25 +35,36 @@ const routes: Routes = [
   },
   {
     path:'home',
-    component:HomeComponent
+    component:HomeComponent,
+    // canActivate:[AuthGuard]
   },
   {
     path: 'profile',
-    component: ProfileComponent
+    component: ProfileComponent,
+    canActivate:[AuthGuard]
   },
   {
     path: 'notifications',
-    component: NotificationsComponent
+    component: NotificationsComponent,
+    canActivate:[AuthGuard]
   },
   {
     path: 'chats',
-    component: ChatComponent
+    component: ChatComponent,
+    canActivate:[AuthGuard]
   },
   {
     path: 'my-doc',
     component: MydocComponent,
+    // canActivate:[AuthGuard],
     children: [
-      { path: 'timeline', component: MytimelineComponent },
+      { path: 'timeline', component: MytimelineComponent,children: [
+          {
+            path: 'addtodo',
+            component: AddtodoComponent,
+          },
+          // Other child routes if any
+        ],},
       { path: 'tasks', component: MytaskComponent },
       { path: 'calendars', component: MycalenderComponent },
       { path: 'contacts', component: MycontactComponent},

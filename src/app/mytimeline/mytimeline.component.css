@@ -1,0 +1,174 @@
+
+/*.half1*/
+/*{*/
+/*  width: 630px;*/
+/*  height: 800px;*/
+/*  background-color: red;*/
+/*}*/
+.half2
+{
+  width: 650px;
+  height: 800px;
+  margin-top: 30px;
+  margin-left: 250px;
+  /*background-color: blue;*/
+}
+.half3{
+  position: relative;
+  width: 622px;
+  height: 240px;
+  /*background-color: lightskyblue;*/
+}
+.half4{
+  position: relative;
+  width: 645px;
+  height: 800px;
+  /*background-color:lavender;*/
+}
+/*.merge*/
+/*{*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*}*/
+.example-card {
+  position: relative;
+  width: 600px;
+  left: 20px;
+  top: 30px;
+}
+.example-card2 {
+  /*position: relative;*/
+  width: 600px;
+  max-height: 400px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+.threeicon
+{
+  padding-left: 1rem;
+}
+.rthreeicon
+{
+  position: relative;
+  top: -15px;
+  padding-left: 1rem;
+  font-size: 27px;
+}
+.post{
+  position: relative;
+  left: 380px;
+}
+.edbtn
+{
+  position: relative;
+  left: 480px;
+}
+#mydot{
+  position: relative;
+  left: 130px;
+}
+.fix {
+  display: flex;
+  flex-direction: row;
+  text-align: end;
+  cursor: pointer;
+}
+.mymerge
+{
+  display: flex;
+  flex-direction: row;
+}
+.bell
+{
+  position: relative;
+  left: 120px;
+}
+.bothshareim
+{
+  position: relative;
+  left: 110px;
+  top: 11px;
+  /*font-size: 20px;*/
+}
+.share-text
+{
+  position: relative;
+  top: -10px;
+  left: 8px;
+  font-size: 15px;
+}
+.btn
+{
+  position: relative;
+  left: 10px;
+  top: 20px;
+  /*width: 15px;*/
+  background-color: limegreen;
+  font-size: 15px;
+  color: black;
+}
+.username
+{
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+  left: 20px;
+  /*width: 70px;*/
+ color: lightskyblue;
+}
+.doc
+{
+  color: lightskyblue;
+  position: relative;
+  top:27px;
+  left: -50px;
+}
+.two
+{
+  padding: 0.5rem;
+}
+.two:hover
+{
+  cursor: pointer;
+  background-color: lightgray;
+}
+.exampleform {
+  /*min-width: 100px;*/
+  width: 400px;
+   outline: none;
+  border: none;
+  padding: 10px;
+  /*width: 50%;*/
+}
+
+.example-full-width {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.four
+{
+  display: flex;
+  flex-direction: row;
+}
+.mymerge3
+{
+  display: flex;
+  flex-direction: row;
+}
+#pc
+{
+  background-color: deepskyblue;
+  margin-left: 130px;
+}
+#myth
+{
+  background-color: green;
+  top: 20px;
+}
+#fk
+{
+  position: relative;
+  left: 440px;
+  top: 13px;
+}

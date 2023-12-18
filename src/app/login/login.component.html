@@ -30,36 +30,29 @@
 
 <div class="main2">
   <div class="myform">
-
-  <form class="example-form" [formGroup]="logForm" (ngSubmit)="onLogIn()">
+    <h1 id="Lg">Login</h1>
+  <form class="example-form" [formGroup]="loginForm" (ngSubmit)="submit()">
     <mat-form-field class="example-full-width">
       <mat-label>Email</mat-label>
       <input matInput type="email" placeholder="Enter Email" formControlName="email" />
       <mat-icon class="pos">mail</mat-icon>
+      <span *ngIf="loginForm.get('email')?.hasError('required') && loginForm.get('email')?.touched" style="color: red">Email is required.</span>
     </mat-form-field>
     <br>
     <mat-form-field class="example-full-width">
       <mat-label>Password</mat-label>
       <input matInput type="password" placeholder="Password" formControlName="password" />
       <mat-icon class="pos">vpn_key</mat-icon>
+      <span *ngIf="loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched" style="color: red">Password is required.</span>
+
     </mat-form-field>
     <br>
     <button mat-raised-button type="submit">Login</button>
     </form>
-
+    <br>
+    <button mat-raised-button routerLink="/register" type="submit">Don't have account! Signup</button>
   </div>
-<!--  <div class="myform">-->
-<!--<form [formGroup]="logForm" (ngSubmit)="onLogIn()">-->
-<!--  <label class="lables">Email:</label><br>-->
-<!--  <input class="input" type="email" placeholder="Enter Email" formControlName="email" />-->
-<!--<br>-->
-<!--  <label  class="lables">Password:</label><br>-->
-<!--  <input  class="input" type="password" placeholder="Password" formControlName="password" />-->
-<!--   <br><br>-->
-<!--  <button  id="sbtn" type="submit">Login</button>-->
-<!--</form>-->
-<!--  </div>-->
-<!--</div>-->
+
 
 
 

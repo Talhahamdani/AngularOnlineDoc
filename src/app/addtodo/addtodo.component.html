@@ -1,0 +1,76 @@
+<!--<<h1 mat-dialog-title>{{data.id ? 'Update' : 'Add'}}</h1>-->
+<!--<div class="men2">-->
+  <mat-toolbar class="toolbar">
+
+    <mat-icon  id="mycon1" matTooltip="priorities">label</mat-icon>
+    <mat-icon  id="mycon2" matTooltip="priorities">attachment</mat-icon>
+    <mat-checkbox id="mycon3" matTooltip="Show Destination Confirmation Pop up" (change)="onCheckboxChange()">
+    </mat-checkbox>
+    <mat-icon  id="mycon4" matTooltip="create">save</mat-icon>
+
+    <span [mat-dialog-close]="data" *ngIf="data.id">
+<!--      <mat-icon>save</mat-icon>-->
+    </span>
+    <span  class="cross" matTooltip="Close" (click)="closeDialog()">
+      <mat-icon>close</mat-icon>
+    </span>
+  </mat-toolbar>
+<br><br><br><br>
+
+  <div class="all">
+  <img id="img" src="https://onlinedocstorage.blob.core.windows.net/prodv2/klgwtwynhrhkzhwwwapypoolzgfp?sp=r&sv=2018-11-09&se=2023-12-14T05%3A58%3A14Z&rscd=inline%3B+filename%3D%22faisal_khan_defaultavatar.png%22%3B+filename*%3DUTF-8%27%27faisal_khan_defaultavatar.png&rsct=image%2Fpng&sr=b&sig=0NvcvgotQUSHuVsY75SzaEuX2RfCl2XrokNefZ69IWM%3D" height="60px" width="60px">
+    <span id="fk1">faisal khan
+    <mat-icon id="cr1">chevron_right</mat-icon>
+    </span>
+    <button id="md" mat-flat-button>My Doc</button>
+    <mat-icon id="cr2">chevron_right</mat-icon>
+    <span class="doc1" [matMenuTriggerFor]="standardsMenu">Standard (Default) </span>
+    <mat-menu #standardsMenu="matMenu">
+      <button mat-menu-item *ngFor="let standard of menuData">
+        {{ standard.name }}
+    </button>
+    </mat-menu>
+
+
+  </div>
+    <br>
+  <form [formGroup]="todoForm">
+    <mat-form-field appearance="fill" class="example-full-width">
+      <input matInput formControlName="name1" placeholder="Title">
+      <mat-error *ngIf="todoForm.get('name1').hasError('required')">Title is required</mat-error>
+      <br>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill" class="example-full-width">
+      <input matInput formControlName="name2" placeholder="Description">
+      <mat-error *ngIf="todoForm.get('name2').hasError('required')">Description is required</mat-error>
+      <br>
+    </mat-form-field>
+  </form>
+<mat-icon id="la">label</mat-icon>
+<button mat-icon-button [matMenuTriggerFor]="optionsMenu">
+<span>Priorities</span>
+</button>
+<div class="priorityoptions">
+<button  mat-fab extended *ngFor="let option of options" class="priorityoption" [class.selected]="selectedOptions[option]" (click)="onPriorityClick(option)">
+  {{ option }}
+</button>
+</div>
+<mat-menu #optionsMenu="matMenu" yPosition="below" xPosition="before">
+  <div *ngFor="let option of options" class="priority-option" [class.selected]="selectedOptions[option]" (click)="onPriorityClick(option)">
+    <mat-checkbox [(ngModel)]="selectedOptions[option]">{{ option }}</mat-checkbox>
+  </div>
+</mat-menu><br><br>
+<mat-divider></mat-divider>
+<mat-icon id="att">attachment</mat-icon>
+<span id="att1">Attachment</span>
+<button  id="stb" mat-stroked-button>Add an Attachment</button>
+
+<!--  <button class="create" mat-raised-button [mat-dialog-close]="todoForm.value" [disabled]="!todoForm.valid" *ngIf="data.id == ''">Create</button>-->
+<!--  <button class="create" mat-button [mat-dialog-close]="todoForm.value" *ngIf="data.id">Update</button>-->
+
+<mat-toolbar class="toolbar2">
+  <mat-checkbox id="con3" matTooltip="Show Destination Confirmation Pop up" (change)="onCheckboxChange()">Show Destination Conformation Pop up</mat-checkbox>
+  <button class="create" mat-raised-button [mat-dialog-close]="todoForm.value" [disabled]="!todoForm.valid" *ngIf="data.id == ''">Create</button>
+  <button class="create" mat-button [mat-dialog-close]="todoForm.value" *ngIf="data.id">Update</button>
+</mat-toolbar>

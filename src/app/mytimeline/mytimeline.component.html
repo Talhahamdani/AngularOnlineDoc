@@ -1,1 +1,131 @@
-<p>mytimeline works!</p>
+<!--<div (click)="openModal()">Click me to open dialog</div>-->
+<!--<div class="merge">-->
+
+
+<!--<div class="half1">-->
+<!--  <p>I am timeline first half</p>-->
+<!--</div>-->
+
+<div class="half2">
+  <div class="half3" (click)="onAdd()">
+  <mat-card class="example-card" >
+    <mat-card-header>
+      <mat-card-subtitle>Write Something here....!</mat-card-subtitle>
+    </mat-card-header>
+    <br> <br> <br> <br> <br>
+    <mat-card-content>
+      <p>{{ longText }}</p>
+      <mat-divider></mat-divider>
+    </mat-card-content>
+    <mat-card-actions>
+    <mat-icon class="threeicon">photo</mat-icon>
+     <mat-icon class="threeicon">person</mat-icon>
+      <mat-icon class="threeicon">location_on</mat-icon>
+      <button class="post" mat-raised-button color="primary">Post</button>
+    </mat-card-actions>
+    <mat-card-footer>
+    </mat-card-footer>
+  </mat-card>
+  </div>
+  <br>
+    <div class="half4">
+<!--      <br><br><br>-->
+      <mat-card class="example-card2" *ngFor="let todo of todoList">
+<!--        <mat-card-header>-->
+<!--        <span class="cursor-pointer group-name-color" tabindex="0">My Docs | Standard (Default) </span>-->
+        <div class="mymerge">
+          <button class="btn" mat-fab>TH</button>
+          <span class="username" routerLink="/home">talha shah</span>
+
+          <span class="doc" [matMenuTriggerFor]="standardsMenu">My Docs | Standard (Default) </span>
+          <mat-menu #standardsMenu="matMenu" yPosition="below" xPosition="before">
+            <button mat-menu-item *ngFor="let standard of menuData">
+              {{ standard.name }}
+            </button>
+          </mat-menu>
+
+          <div class="bothshareim">
+          <img id="imgarrow" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR24xbH_1Qx225CXLyY047f8czgiaKAJZEgo5A875hzKxNH6pTI" alt="imge" height="30px" width="30px">
+          <span class="share-text">Share</span>
+          </div>
+        <button  class="bell"  mat-icon-button [matTooltip]="notificationTooltip" (click)="toggleNotification()">
+          <mat-icon *ngIf="showNotification">notifications</mat-icon>
+          <mat-icon *ngIf="!showNotification">notifications_off</mat-icon>
+        </button>
+        <button id="mydot" mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <span class="fix" (click)="onEdit(todo)">
+            <mat-icon >edit</mat-icon>Edit
+              </span>
+          <mat-divider></mat-divider>
+          <span class="fix" (click)="onDelete(todo)">
+            <mat-icon >delete</mat-icon>Delete
+            </span>
+        </mat-menu>
+        </div>
+        <mat-card-header>
+          <br> <br>
+          <mat-card-title> {{ todo.name1 }}</mat-card-title>
+          <mat-card-subtitle>{{ todo.name2 }}</mat-card-subtitle>
+        </mat-card-header>
+        <br> <br> <br> <br> <br>
+        <mat-card-content>
+          <div class="four">
+
+          <span class="two" >Commit</span>
+          <span class="two" >Files</span>
+            <img id="fk" src="https://onlinedocstorage.blob.core.windows.net/prodv2/klgwtwynhrhkzhwwwapypoolzgfp?sp=r&sv=2018-11-09&se=2023-12-14T06%3A47%3A24Z&rscd=inline%3B+filename%3D%22faisal_khan_defaultavatar.png%22%3B+filename*%3DUTF-8%27%27faisal_khan_defaultavatar.png&rsct=image%2Fpng&sr=b&sig=U%2BPwu%2FL6nfslcGT6WBBHs2atZ9jHtO1ur9o9D%2B%2BSkis%3D" height="15px" width="15px">
+          </div>
+          <mat-divider></mat-divider>
+        </mat-card-content>
+        <mat-card-actions>
+          <div class="mymerge3">
+            <button id="myth" mat-fab>TH</button>
+          <form class="example-form">
+            <mat-form-field class="example-full-width">
+              <input matInput  placeholder="Add Comments here...!">
+            </mat-form-field>
+          </form><br>
+         </div>
+          <br>
+          <button id="pc" mat-raised-button >Post Comment</button>
+          <mat-icon>attachment</mat-icon>
+        </mat-card-actions>
+      </mat-card>
+      <br><br><br>
+    </div>
+  <br><br><br>
+
+</div>
+
+
+<!--  <div class="alag">-->
+
+
+<!--  </div>-->
+<!--</div>-->
+<!--  <div class="half4">-->
+<!--    <mat-card class="example-card2" *ngFor="let todo of todoList">-->
+<!--      <mat-card-header>-->
+<!--        <mat-card-title> {{ todo.name1 }}</mat-card-title>-->
+<!--        <mat-card-subtitle>{{ todo.name2 }}</mat-card-subtitle>-->
+<!--      </mat-card-header>-->
+<!--      <br> <br> <br> <br> <br>-->
+<!--      <mat-card-content>-->
+<!--        <mat-divider></mat-divider>-->
+<!--      </mat-card-content>-->
+<!--      <mat-card-actions>-->
+<!--        <mat-icon class="threeicon">photo</mat-icon>-->
+<!--        <mat-icon class="threeicon">person</mat-icon>-->
+<!--        <mat-icon class="threeicon">location_on</mat-icon>-->
+<!--      </mat-card-actions>-->
+<!--      <mat-card-footer>-->
+<!--        <mat-icon (click)="onEdit(todo)">edit</mat-icon>-->
+<!--        <mat-icon (click)="onDelete(todo)">delete</mat-icon>-->
+<!--      </mat-card-footer>-->
+<!--    </mat-card>-->
+<!--  </div>-->
+
+

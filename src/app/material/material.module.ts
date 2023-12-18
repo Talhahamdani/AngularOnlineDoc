@@ -13,10 +13,14 @@ import {MatCardModule} from "@angular/material/card";
 import {MatTooltipModule} from "@angular/material/tooltip";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {MatInputModule} from "@angular/material/input";
+import {MatDialogModule, MatDialogRef,MatDialog} from "@angular/material/dialog";
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatChipsModule} from "@angular/material/chips";
 
 const MyMaterial=[MatButtonModule,MatToolbarModule,MatIconModule,MatMenuModule,
   MatLineModule,MatDividerModule,MatTabsModule,MatButtonToggleModule,MatSidenavModule,
-MatCardModule,MatTooltipModule,MatSnackBarModule,MatFormFieldModule,MatInputModule];
+MatCardModule,MatTooltipModule,MatSnackBarModule,MatFormFieldModule,MatInputModule,
+MatDialogModule,MatCheckboxModule,MatChipsModule];
 
 
 @NgModule({
