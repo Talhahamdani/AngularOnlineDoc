@@ -48,7 +48,14 @@
   max-height: 200px;
 
 }
+.example-card3 {
+  position: relative;
+  top: 30px;
+  max-width: 220px;
+  margin-left: 40px;
+  max-height: 150px;
 
+}
 .example-header-image {
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
@@ -86,5 +93,22 @@
 {
   margin-left: 30px;
 }
-
-
+#sdiv
+{
+  position: relative;
+  left: 50px;
+  width: 1300px;
+  height: 200px;
+  /*background-color: deepskyblue;*/
+  display: flex
+}
+#scrollContainer {
+  position: relative;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+.mat-card {
+  margin-right: 10px; /* Adjust as needed */
+}

@@ -1,7 +1,6 @@
-#pf
+.pt
 {
-  background-color: lightskyblue;
-  width: 900px;
-  height: 100px;
-  cursor: pointer;
+ background-color: deepskyblue;
+  width: 100%;
+  height: 300px;
 }

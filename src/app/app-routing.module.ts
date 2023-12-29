@@ -5,7 +5,6 @@ import {ProfileComponent} from "./profile/profile.component";
 import {NotificationsComponent} from "./notifications/notifications.component";
 import {ChatComponent} from "./chat/chat.component";
 import {MydocComponent} from "./mydoc/mydoc.component";
-
 import {MycalenderComponent} from "./mycalender/mycalender.component";
 import {MyfileComponent} from "./myfile/myfile.component";
 import {MytimelineComponent} from "./mytimeline/mytimeline.component";
@@ -17,12 +16,10 @@ import {AuthGuard} from "./guards/authguard.guard";
 import {AddtodoComponent} from "./addtodo/addtodo.component";
 
 
-// import {AppComponent} from "./app.component";
-
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/login', // Redirect to the login component
+    redirectTo: '/login',
     pathMatch: 'full'
   },
   {
@@ -36,7 +33,7 @@ const routes: Routes = [
   {
     path:'home',
     component:HomeComponent,
-    // canActivate:[AuthGuard]
+    canActivate:[AuthGuard]
   },
   {
     path: 'profile',
@@ -56,19 +53,20 @@ const routes: Routes = [
   {
     path: 'my-doc',
     component: MydocComponent,
-    // canActivate:[AuthGuard],
+    canActivate:[AuthGuard],
     children: [
       { path: 'timeline', component: MytimelineComponent,children: [
           {
             path: 'addtodo',
             component: AddtodoComponent,
           },
-          // Other child routes if any
+
         ],},
       { path: 'tasks', component: MytaskComponent },
       { path: 'calendars', component: MycalenderComponent },
       { path: 'contacts', component: MycontactComponent},
-      { path: '', redirectTo: 'timeline', pathMatch: 'full' }, // Default route to MyTimeline
+      { path:'files',component:MyfileComponent},
+      { path: '', redirectTo: 'timeline', pathMatch: 'full' },
     ],
   },
   { path: '', redirectTo: '/my-doc/timeline', pathMatch: 'full' },

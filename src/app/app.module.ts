@@ -46,6 +46,7 @@ import {AngularFirestore, AngularFirestoreModule} from "@angular/fire/compat/fir
 // import { ToolbarComponent } from './toolbar/toolbar.component';
 import { DeletedialogComponent } from './deletedialog/deletedialog.component';
 import {ScrollingModule} from "@angular/cdk/scrolling";
+import { ProfileinformationComponent } from './profileinformation/profileinformation.component';
 
 
 @NgModule({
@@ -71,6 +72,7 @@ import {ScrollingModule} from "@angular/cdk/scrolling";
     AddtodoComponent,
     // ToolbarComponent,
     DeletedialogComponent,
+    ProfileinformationComponent,
   ],
   imports: [
     BrowserModule,

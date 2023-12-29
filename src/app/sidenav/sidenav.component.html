@@ -57,6 +57,11 @@
       <mat-icon class="iconall">account_circle</mat-icon>
       <span class="mybtn2">My Contacts</span>
     </button>
+      <br>
+      <button class="db1" routerLink="/my-doc/files" (click)="handleButtonClick('files')" [class.clicked]="currentButton === 'files'">
+        <mat-icon class="iconall">folder_open</mat-icon>
+        <span class="mybtn2">My Files</span>
+      </button>
     <br>
     <span id="qk">QUICK ACCESS</span>
     <br> <br>

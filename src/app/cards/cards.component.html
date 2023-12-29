@@ -10,8 +10,9 @@
       <mat-icon *ngIf="showNotification">notifications</mat-icon>
       <mat-icon *ngIf="!showNotification">notifications_off</mat-icon>
     </button>
+    <mat-icon id="mv">more_vert</mat-icon>
   </mat-card-header>
-  <img [src]="myPhoto.urls.small" width="350" height="350" >
+  <img [src]="myPhoto.urls.small" width="350" height="350">
   <mat-card-content  *ngIf="myPhoto.description">
     <p>
       {{ myPhoto.description }}

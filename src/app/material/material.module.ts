@@ -20,7 +20,7 @@ import {MatChipsModule} from "@angular/material/chips";
 const MyMaterial=[MatButtonModule,MatToolbarModule,MatIconModule,MatMenuModule,
   MatLineModule,MatDividerModule,MatTabsModule,MatButtonToggleModule,MatSidenavModule,
 MatCardModule,MatTooltipModule,MatSnackBarModule,MatFormFieldModule,MatInputModule,
-MatDialogModule,MatCheckboxModule,MatChipsModule];
+MatDialogModule,MatCheckboxModule,MatChipsModule,MatIconModule];
 
 
 @NgModule({
